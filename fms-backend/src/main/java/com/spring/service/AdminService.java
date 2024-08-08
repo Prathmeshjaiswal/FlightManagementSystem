@@ -11,11 +11,9 @@ public class AdminService {
     @Autowired
     private AdminRepository adminRepository;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
     public Admin createAdmin(Admin admin) {
-        admin.setPassword(passwordEncoder.encode(admin.getPassword()));
+        admin.setPassword(admin.getPassword());
         return adminRepository.save(admin);
     }
 

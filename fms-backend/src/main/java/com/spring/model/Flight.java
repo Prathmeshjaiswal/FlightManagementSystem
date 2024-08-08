@@ -8,7 +8,6 @@ public class Flight {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
     private String flightNumber;
     private String airline;
     private String departureCity;

@@ -38,11 +38,10 @@ export const LoginPage = () => {
         console.error('Error setting up the request:', error.message);
         setError('Error setting up the request');
       }
-    });
+    };
  
     };
 
-  };
 
   return (
     <div>
